@@ -1,0 +1,37 @@
+greenhouse:
+  tokens:
+    - pathai
+    - ginkgobioworks
+    - datavant2
+    - foliahealth
+    - acadianassetmanagementllc
+    - clearviewhealthcarepartners
+    - putnamassociatesllc
+    - flatironhealth
+    - om1
+    - iterativescopes
+    - butterflynetwork
+    - color
+    - insitro
+    # - devotedhealth   # keep ONLY if API URL works
+
+lever:
+  companies:
+    - whoop
+    - buoyhealth
+    - ibexai
+    - iterativescopes
+    - bicyclehealth
+    - evidation
+    - color
+    # add more slugs you confirm at jobs.lever.co/<slug>
+
+workday:
+  cxs_endpoints:
+    # >>> Replace these placeholders with the exact URLs you capture in DevTools:
+    - https://massgeneralbrigham.wd1.myworkdayjobs.com/wday/cxs/massgeneralbrigham/MGBExternal/jobs
+    # - https://wd1.myworkdayjobs.com/wday/cxs/bilh/External_Career_Site/jobs
+    # - https://wd1.myworkdayjobs.com/wday/cxs/bostonchildrens/Main-Campus/jobs
+    # - https://wd1.myworkdayjobs.com/wday/cxs/dfci/DFCI_External_Career_Site/jobs
+    # - https://wd1.myworkdayjobs.com/wday/cxs/BroadInstitute/Broad_External_Career_Site/jobs
+    # - https://wd5.myworkdayjobs.com/wday/cxs/mit/MIT_External_Career_Site/jobs
