@@ -30,7 +30,7 @@ workday:
   cxs_endpoints:
     # >>> Replace these placeholders with the exact URLs you capture in DevTools:
     - https://massgeneralbrigham.wd1.myworkdayjobs.com/wday/cxs/massgeneralbrigham/MGBExternal/jobs
-    # - https://wd1.myworkdayjobs.com/wday/cxs/bilh/External_Career_Site/jobs
+    - https://silgancontainers.wd1.myworkdayjobs.com/wday/cxs/silgancontainers/silgan/jobs
     # - https://wd1.myworkdayjobs.com/wday/cxs/bostonchildrens/Main-Campus/jobs
     # - https://wd1.myworkdayjobs.com/wday/cxs/dfci/DFCI_External_Career_Site/jobs
     # - https://wd1.myworkdayjobs.com/wday/cxs/BroadInstitute/Broad_External_Career_Site/jobs
