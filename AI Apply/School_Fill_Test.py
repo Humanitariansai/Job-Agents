@@ -4,7 +4,7 @@ import os
 JOB_URL = "https://job-boards.greenhouse.io/doordashusa/jobs/7537124"
 
 RESUME_PATH = os.path.expanduser(
-    "~/Desktop/Manish Work/AI Apply/Resume/Manish_Choudhary_Resume.pdf"
+    "Resume/Data_Scientist_Resume_Sample.pdf"
 )
 
 with sync_playwright() as p:
