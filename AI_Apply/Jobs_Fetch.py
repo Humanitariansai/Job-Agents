@@ -22,7 +22,7 @@ from datetime import datetime, timedelta, timezone
 ALL_JOBS_CSV = "Greenhouse_Jobs.csv"
 
 # Text file that contains a list of company board names (one per line)
-COMPANIES_FILE = "Companies.txt"
+COMPANIES_FILE = "AI_Apply/Companies.txt"
 
 
 # ---------- LOAD COMPANIES ----------
@@ -148,7 +148,7 @@ with open(ALL_JOBS_CSV, "a", newline="", encoding="utf-8") as f:
 
 
         # Only keep jobs published within the last N days
-        cutoff = datetime.now(timezone.utc) - timedelta(days=3)  # look back 3 days
+        cutoff = datetime.now(timezone.utc) - timedelta(days=2)  # look back 3 days
         recent_jobs = []
 
         # Loop through all jobs returned by the API
