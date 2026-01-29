@@ -2,23 +2,23 @@
 Workday Jobs Agent - Scraper
 
 Usage:
-    python examples/scrape_jobs.py --company cvs --limit 10
-    python examples/scrape_jobs.py --company centene
-    python examples/scrape_jobs.py --company all
+    cd "/Users/manishchoudhary/Job-Agents/Workday Jobs Agent" && python3 examples/scrape_jobs.py --list
+    cd "/Users/manishchoudhary/Job-Agents/Workday Jobs Agent" && python3 examples/scrape_jobs.py --company cvs --limit 10
+    cd "/Users/manishchoudhary/Job-Agents/Workday Jobs Agent" && python3 examples/scrape_jobs.py --company centene
+    cd "/Users/manishchoudhary/Job-Agents/Workday Jobs Agent" && python3 examples/scrape_jobs.py --company all
 """
 
 import asyncio
 import argparse
 import sys
 from pathlib import Path
-from utils.storage import save_jobs, load_jobs, get_existing_job_ids
 
 # Add parent directory to path FIRST
-sys.path.append(str(Path(__file__).parent.parent))
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from config.companies import get_company, list_companies, COMPANY_NAMES
 from scrapers.workday import WorkdayScraper
-from utils.storage import save_jobs, load_jobs
+from utils.storage import save_jobs, load_jobs, get_existing_job_ids
 
 # Try to import merge_jobs (optional feature)
 try:
@@ -70,7 +70,15 @@ async def scrape_company(company_name: str, limit: int = None):
 async def main():
     """Main function with CLI argument parsing"""
     parser = argparse.ArgumentParser(
-        description="Workday Jobs Agent - Scrape jobs from Workday career sites"
+        description="Workday Jobs Agent - Scrape jobs from Workday career sites",
+        epilog="""
+Examples:
+  cd "Workday Jobs Agent" && python3 examples/scrape_jobs.py --list
+  cd "Workday Jobs Agent" && python3 examples/scrape_jobs.py --company cvs --limit 10
+  cd "Workday Jobs Agent" && python3 examples/scrape_jobs.py --company centene
+  cd "Workday Jobs Agent" && python3 examples/scrape_jobs.py --company all
+        """,
+        formatter_class=argparse.RawDescriptionHelpFormatter
     )
     
     parser.add_argument(
