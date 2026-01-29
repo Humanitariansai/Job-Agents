@@ -27,3 +27,4 @@ descript
 mixpanel
 figma
 webflow
+scaleai
